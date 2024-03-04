@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs'); -%>
+
+
+  <div class="box">
+    <p style="font-size: 40px ;width: 100%;">
+        Welcome to PermaList ! 
+    </p>
+  </div>
+
+  <form action="/newList" method="post" class="empty-page">
+    <input type="text" name="add" placeholder="New List" autofocus="true" style="height: 35px;"></input>
+    <button type="submit" class="empty-page-button">+</button>
+  </form>
+
+  
+  <%- include('partials/footer.ejs'); -%>

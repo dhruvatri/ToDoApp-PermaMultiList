@@ -1,5 +1,32 @@
 <%- include('partials/header.ejs'); -%>
 
+  <form class="tab-view" action="/list" method="post">
+    <label style="background-color: #a683e3; color: white; font-size: 25px;  height:32px; border-radius: 0%; margin-bottom: 20px;"> Lists </label>
+    <% for(let list of lists) { %>
+      <input type="submit" value="<%=list.id%>" id="<%= list.id%>" name="listItem">
+      <label for="<%=list.id%>"> <%= list.listtitle %> </label>
+<!-- 
+      <form action="/deleteItem" method="post">
+        <input type="checkbox" onchange="this.form.submit()" name="deleteList" value="<%= list.id %>">
+      </form> -->
+
+    <% } %>
+  </form>
+  
+  <form class="tab-cross" action="/deletelist" method="post">
+
+    <% for(let list of lists) { %>
+      <input type="submit" value="<%=list.id%>" id="<%= list.id%>x" name="listItem">
+      <label for="<%=list.id%>x"> x </label>
+
+    <% } %>
+  </form>
+
+  <form action="/newList" method="post" class="add-item">
+    <input type="text" name="add" placeholder="New List"></input>
+    <button type="submit">+</button>
+  </form>
+
   <div class="box" id="heading">
     <h1>
       <%= listTitle %>

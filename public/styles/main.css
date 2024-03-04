@@ -110,4 +110,205 @@ footer {
   flex: 0 0 auto;
   color: white;
   text-align: center;
+  float: right;
+}
+
+.tab-view{
+  padding-top:60px;
+  text-align :left;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  
+}
+
+.tab-view input{
+  position:relative;
+  display: none;
+}
+.tab-view > label {
+  border: black solid 3px;
+  margin-top: 10px;
+  height: 30px;
+  padding-top: 8px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  text-shadow: #a683e3;
+  /* border-radius: 15%; */
+  text-align: center;
+  color:#a683e3;
+  font-weight: bold;
+  font-family: FontAwesome;
+  font-size: 18px;
+
+}
+.tab-view > label i{
+  display: block;
+  float: left;
+  margin: 0px 8px 0 -2px ;
+}
+
+.tab-view > ul {
+  list-style: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+}
+.tab-view > ul > li {
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  padding: 30px 40px 40px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.tab-view #tab{
+  background-color: white;
+  position :relative;
+  margin: 0px 8px 0 -2px ;
+  width: 100%;
+  height: 30px;
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+}
+
+
+.tab-view > button{
+  width: 10%;
+  height: 20px;
+  background-color: white;
+  font-size: 25px;
+  position: relative;
+  margin-right: 10px;
+  margin-top: -37px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  z-index: 5;
+}
+
+
+.add-item{
+  position: absolute;
+  width: 250px; 
+  display: block;
+  float: left;
+}
+
+.add-item > input{
+  border: black solid 3px;
+  display: block; 
+  background-color: white; 
+  width: 242px; height:30px;
+  margin-bottom: 15px; 
+  position: relative;
+  margin-top: 600px;   
+  text-align: center;
+}
+
+.add-item > button{
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  font-size: 20px;
+  border: black solid 3px;
+}
+
+.empty-page{
+  align-items: center;
+  display: inline-block;
+  width: 300px;
+  background-color: white;
+  margin-left: 0px;
+  border: black 2px solid;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.empty-page-button{
+  background-color: #a683e3;
+  position :relative;
+  margin: 0px 8px 0 -2px ;
+  width: 100%;
+  height: 35px;
+  width: 100%;
+  display: block;
+  font-size:  30px;
+  color: white;
+  margin-top: 12px;
+  padding-top: -2px;
+}
+
+#deleteList{
+  height: 20px;
+  border-color: aqua;
+}
+
+.tab-cross{
+  margin-top:63px;
+  padding-top:60px;
+  text-align :left;
+  width: 250px;
+  position: fixed;
+  z-index: 0;
+}
+
+.tab-cross input{
+  position:relative;
+  display: none;
+}
+.tab-cross > label {
+  margin-top: 18px;
+  height: 30px;
+  padding-top: 6px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  text-shadow: #a683e3;
+  text-align: center;
+  color:black;
+  font-weight: bold;
+  font-family: FontAwesome;
+  font-size: 20px;
+  margin-left: 260px;
+  margin-right: 5px;
+  z-index: 20;
+
+}
+.tab-cross > label i{
+  display: block;
+  float: left;
+  margin: 0px 8px 0 -2px ;
+}
+
+
+.tab-cross > button{
+  width: 10%;
+  height: 20px;
+  background-color: white;
+  font-size: 25px;
+  position: relative;
+  margin-right: 10px;
+  margin-top: -37px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  z-index: 5;
 }
